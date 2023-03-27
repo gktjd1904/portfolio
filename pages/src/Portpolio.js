@@ -22,6 +22,7 @@ function Portpolio() {
 
     const [num, setNum] = useState(0);
 
+
     function slideChange(e) {
         setNum(e.realIndex);
         console.log(e.realIndex)

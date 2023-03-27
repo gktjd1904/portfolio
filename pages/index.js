@@ -9,14 +9,13 @@ import backgroundIMG from '../public/img/BG_img_01.jpg';
 import btnIMG from '../public/img/right.png';
 
 
-function index() {
+export default function Home() {
 
 
   const [menu, setMenu] = useState(true);
 
   function menuBTN() {
-    setMenu(!menu)
-    console.log(menu)
+    setMenu(!menu) 
   }
 
   return (
@@ -34,13 +33,13 @@ function index() {
 
           <div className={menu ? styles.fontBox : `${styles.fontBox} ${styles.action}`}>
             <p>B</p>
-            <span className={menu ? styles.spanA : `${styles.spanA} ${styles.action}`}>EA HASEONG's</span>
+            <span className={menu ? styles.spanA : `${styles.spanA} ${styles.action}`}>EA HASEONG&#39;s</span>
             <span className={menu ? styles.spanB : `${styles.spanB} ${styles.action}`}>EA</span>
           </div>
 
           <div className={menu ? styles.fontBox : `${styles.fontBox} ${styles.action}`}>
             <p>P</p>
-            <span>ORTPOLIO</span>
+            <span>ORTFOLIO</span>
           </div>
 
         </div>
@@ -86,4 +85,3 @@ function index() {
   )
 }
 
-export default index

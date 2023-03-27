@@ -61,9 +61,6 @@ function BuuBuu() {
                                 <li><Image alt='' src={mariaDB}></Image></li>
                                 <li><Image alt='' src={next} style={{ backgroundColor: 'white' }}></Image></li>
                             </ul>
-                            {/* <p>-회원가입</p>
-                        <p>-로그인</p>
-                        <p>-SDM페이지</p> */}
                         </div>
                     </div>
                     <div className={num === 2 || num === 3 ? styles.block : styles.none}>
@@ -81,11 +78,12 @@ function BuuBuu() {
                             <h3>🤔좋아요 기능 오류</h3><br></br>
                             <p>😏유저에 따라 좋아요가 다르게 보여야하기 때문에, 좋아요 기능의
                                 테이블을 따로 분리 게시글의  id값과 유저의 정보를 저장해 filter메서드를 사용
-                                <br></br><br></br>
-                                <h3>🤔canvas이미지 저장시 CORS오류</h3>
-                                <p>😏배포 후 도메인이 달라져서 해결<br></br>---(개발환경에서 canvas에 외부 이미지가 들어가면 보안상의 이
-                                    유로 CORS오류가 뜬다)</p>
                             </p>
+                            <br></br><br></br>
+                            <h3>🤔canvas이미지 저장시 CORS오류</h3><br></br>
+                            <p>😏배포 후 도메인이 달라져서 해결<br></br>---(개발환경에서 canvas에 외부 이미지가 들어가면 보안상의 이
+                                유로 CORS오류가 뜬다)</p>
+
                         </div>
                     </div>
                     <div className={num > 5 ? styles.block : styles.none}>
