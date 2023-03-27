@@ -12,9 +12,9 @@ function project() {
 
     return (
         <div className={styles.aaa}>
-            <div className={styles.portpolio}>
+            {/* <div className={styles.portpolio}>
                 <Portpolio></Portpolio>
-            </div>
+            </div> */}
             <div className={styles.bbubbu}>
                 <BuuBuu></BuuBuu>
             </div>
