@@ -1,5 +1,12 @@
-import '@/styles/globals.css'
+import '@/styles/globals.scss'
+import Header from './src/Header'
 
 export default function App({ Component, pageProps }) {
-  return <Component {...pageProps} />
+
+  return (
+    <>
+      <Header></Header>
+      <Component {...pageProps} />
+    </>
+  )
 }

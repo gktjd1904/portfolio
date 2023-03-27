@@ -2,11 +2,14 @@
   "name": "hsportpolio",
   "version": "0.1.0",
   "private": true,
+  "homepage": "http://gktjd1904.github.io/portfolio",
   "scripts": {
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "dependencies": {
     "@next/font": "13.2.4",
@@ -14,6 +17,11 @@
     "eslint-config-next": "13.2.4",
     "next": "13.2.4",
     "react": "18.2.0",
-    "react-dom": "18.2.0"
+    "react-dom": "18.2.0",
+    "sass": "^1.60.0",
+    "swiper": "^9.1.1"
+  },
+  "devDependencies": {
+    "gh-pages": "^5.0.0"
   }
 }

@@ -1,0 +1,268 @@
+.cont {
+    overflow: hidden;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100vw;
+
+    .main {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        width: 80%;
+        left: 10%;
+        z-index: 2;
+        overflow: hidden;
+        // border: 1px solid red;
+
+
+        .title {
+            font-size: 8vw;
+            font-weight: bold;
+            color: #46A3D2;
+            display: flex;
+            flex-direction: column;
+
+            .fontBoxA {
+                display: flex;
+            }
+
+            .fontBox {
+                display: flex;
+                transition: 1000ms;
+
+
+                &.action {
+                    transform: translateX(40%);
+                }
+            }
+
+
+            .spanA {
+                display: block;
+                color: white;
+                animation: fadeIn 1800ms;
+                animation-fill-mode: forwards;
+
+                @keyframes fadeIn {
+                    from {
+                        opacity: 0;
+                    }
+
+                    to {
+                        opacity: 1;
+                    }
+                }
+
+                &.action {
+                    display: none;
+                    white-space: nowrap;
+                }
+            }
+
+            .spanB {
+                color: white;
+                display: none;
+
+                &.action {
+                    display: block;
+                    animation: fadeIn 1000ms;
+                    animation-fill-mode: forwards;
+
+                    @keyframes fadeIn {
+                        from {
+                            opacity: 0;
+                        }
+
+                        to {
+                            opacity: 1;
+                        }
+                    }
+                }
+            }
+        }
+
+    }
+
+    .bgIMG {
+        position: absolute;
+        z-index: 2;
+        top: 0;
+        right: 0;
+        height: 100vh;
+        width: 39vw;
+        transform: translate(0%);
+        transition: 1000ms;
+        // border: 1px solid red;
+
+        &.action {
+            transform: translateX(100%);
+            // overflow: hidden;
+        }
+    }
+
+    .menu {
+        position: absolute;
+        top: 0;
+        z-index: 888;
+        width: 35vw;
+        transform: translateX(-100%);
+        height: 100vh;
+        background-color: white;
+        transition: 1000ms;
+        // border: 3px solid red;
+
+        &.action {
+            transform: translateX(0);
+            position: absolute;
+            top: 0;
+            // border: 3px solid red;
+        }
+
+        .menuCont {
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: start;
+            transform: translateY(-5%);
+            margin-left: 20%;
+            gap: 5%;
+
+            a {
+                font-size: 2.5vw;
+                text-decoration: none;
+                color: black;
+
+                &::after {
+                    display: block;
+                    content: '';
+                    border-bottom: 4px solid black;
+                    transform: scaleX(0);
+                    transition: transform 250ms ease-in-out;
+
+                }
+
+                &:hover::after {
+                    transform-origin: 0% 50%;
+                    transform: scale(1);
+                }
+            }
+
+            .info {
+                position: absolute;
+                bottom: 2%;
+                left: -18%;
+                font-size: 1vw;
+            }
+        }
+    }
+
+
+    .menuBTN {
+        z-index: 889;
+        position: absolute;
+        top: 150px;
+        left: 2vw;
+        transform: translateY(-50%);
+        // border: 1px solid yellow;
+        cursor: pointer;
+
+        .toogle {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+            // border: 1px solid red;
+            width: 50px;
+            height: 50px;
+
+            .toogleSpan {
+                display: block;
+                width: 100%;
+                height: 6px;
+                background-color: white;
+                border-radius: 3px;
+                transition: 500ms;
+            }
+
+            .toogleSpanA {
+                display: block;
+                width: 100%;
+                height: 6px;
+                background-color: black;
+                border-radius: 3px;
+                transform: rotate(45deg) translate(22px, 2px);
+                transition: 500ms;
+            }
+
+            .toogleSpanB {
+                display: block;
+                width: 100%;
+                height: 6px;
+                background-color: black;
+                border-radius: 3px;
+                opacity: 0;
+                transition: 500ms;
+                transform: translateX(20px);
+                animation: xx 500ms forwards;
+
+                @keyframes xx {
+                    0% {
+                        width: 100%;
+                    }
+                    100%{
+                        width: 0;
+                    }
+                }
+            }
+
+            .toogleSpanC {
+                display: block;
+                width: 100%;
+                height: 6px;
+                background-color: black;
+                border-radius: 3px;
+                transform: rotate(-45deg) translate(17px, 2px);
+                transition: 500ms;
+            }
+        }
+    }
+
+    .bgTextBox {
+        z-index: 1;
+        position: absolute;
+        top: 100%;
+        transform: translateY(-100%);
+        width: 100%;
+        font-size: 16vw;
+        white-space: nowrap;
+        overflow: hidden;
+        color: black;
+
+        .Text {
+            transform: translateY(-50%);
+            white-space: nowrap;
+            will-change: transform;
+            animation: marquee 30s linear infinite;
+
+            @keyframes marquee {
+                0% {
+                    transform: translateX(0);
+                }
+
+                100% {
+                    transform: translateX(-50%);
+                }
+            }
+        }
+
+        p {
+            text-shadow:
+                -1px -1px 0 #555454,
+                1px -1px 0 #555454,
+                -1px 1px 0 #555454,
+                1px 1px 0 #555454;
+        }
+    }
+}

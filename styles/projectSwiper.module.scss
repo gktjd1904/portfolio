@@ -1,0 +1,57 @@
+.project {
+    // position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    width: 100vw;
+
+    .projectCont {
+        width: 90%;
+        height: 65vh;
+        margin: 6vw auto;
+        display: flex;
+
+        .leftCont {
+            width: 50%;
+            height: 100%;
+            border-right: 3px solid #333;
+            border-bottom: 3px solid #333;
+            border-top: 3px solid #333;
+            color: white;
+            padding-top: 2vw;
+            padding-bottom: 2vw;
+
+            .block {
+                display: block;
+                opacity: 1;
+                animation: fade-in 1400ms forwards;
+
+                @keyframes fade-in {
+                    0% {
+                        opacity: 0;
+                        transform: translateY(20%);
+                    }
+
+                    50% {
+                        transform: translateY(0%);
+                    }
+
+                    100% {
+                        opacity: 1;
+                    }
+                }
+            }
+
+            .none {
+                display: none;
+            }
+        }
+
+        .rightCont {
+            width: 50%;
+            height: 100%;
+            // border: 1px solid blue;
+        }
+    }
+
+}
