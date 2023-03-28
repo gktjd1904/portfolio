@@ -4,11 +4,12 @@
     list-style-type: none;
     box-sizing: border-box;
 
+
     &::-webkit-scrollbar {
         display: none;
     }
 }
 
 body {
-    background-color: #000
+    background-color: #000;
 }

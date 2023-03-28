@@ -7,7 +7,8 @@
 
     .projectCont {
         width: 90%;
-        height: 65vh;
+        height: 65vw;
+        max-height: 610px;
         margin: 6vw auto;
         display: flex;
 
@@ -50,7 +51,9 @@
         .rightCont {
             width: 50%;
             height: 100%;
+
             // border: 1px solid blue;
+
         }
     }
 

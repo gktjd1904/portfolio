@@ -19,6 +19,8 @@
     display: flex;
 
 
+
+
     img {
         width: auto;
         height: auto;
@@ -27,5 +29,11 @@
         position: absolute;
         top: 50%;
         transform: translateY(-50%);
+
+        &:hover {
+            // cursor: url('../public/img/hover2.svg')20 30;
+            cursor: url('../public/img/hover2.svg') 20 30, auto;
+        }
+
     }
 }

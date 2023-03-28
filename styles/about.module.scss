@@ -27,14 +27,15 @@
         .contRight {
             width: 70%;
 
-            h1{
+            h1 {
                 font-size: 3vw;
                 line-height: 5vw;
                 margin-bottom: 3vw;
-                padding-bottom: 1vw ;
+                padding-bottom: 1vw;
                 border-bottom: 3px solid #333;
             }
-            p{
+
+            p {
                 font-size: 1.4vw;
             }
 
@@ -53,8 +54,9 @@
         width: 90%;
         margin: 0 auto;
         margin-top: 20vw;
-        // background-color: white;
         margin-bottom: 10vw;
+        overflow: hidden;
+        white-space: nowrap;
 
         h1 {
             margin-bottom: 3vw;
@@ -64,21 +66,21 @@
             font-size: 5vw;
         }
 
-        .skills {
+        .skillsA,
+        .skillsB {
             display: flex;
-            gap: 4%;
-            flex-direction: row;
-            flex-wrap: wrap;
+            /* gap: 11%; */
+            margin-bottom: 5vw;
+            justify-content: space-around;
 
             li {
                 padding-bottom: 35px;
 
                 img {
-                    width: 4vw;
-                    height: 4vw;
+                    width: 6vw;
+                    height: 6vw;
                 }
             }
-
         }
 
     }

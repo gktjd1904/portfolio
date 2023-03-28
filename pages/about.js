@@ -65,12 +65,14 @@ function about() {
 
             <div className={styles.skill}>
                 <h1>🔶SKILLS</h1>
-                <ul className={styles.skills}>
+                <ul className={styles.skillsA}>
                     <li ><Image src={html} alt=''></Image></li>
+                    <li><Image src={css} alt=''></Image></li>
                     <li><Image src={js} alt=''></Image></li>
                     <li><Image src={next} style={{ backgroundColor: 'white' }} alt=''></Image></li>
                     <li><Image src={react} alt=''></Image></li>
-                    <li><Image src={css} alt=''></Image></li>
+                </ul>
+                <ul className={styles.skillsB}>
                     <li><Image src={scss} alt=''></Image></li>
                     <li><Image src={nextAuth} alt=''></Image></li>
                     <li><Image src={mySql} alt=''></Image></li>

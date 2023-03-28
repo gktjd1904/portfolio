@@ -8,7 +8,7 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
-import { Pagination, Navigation } from "swiper";
+import { Pagination, Navigation, Autoplay } from "swiper";
 
 import swiper from "@/styles/swiper.module.scss";
 import Image from 'next/image';
@@ -77,8 +77,12 @@ function Youtube() {
                             pagination={{
                                 type: "progressbar",
                             }}
+                            autoplay={{
+                                delay: 1500,
+                                disableOnInteraction: false,
+                            }}
                             // navigation={true}
-                            modules={[Pagination]}
+                            modules={[Pagination, Autoplay]}
                             className={swiper.mySwiper}
                         >
                             <SwiperSlide><Image src={youtube1} alt=''></Image></SwiperSlide>

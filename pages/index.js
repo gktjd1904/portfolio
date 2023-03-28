@@ -34,7 +34,7 @@ export default function Home() {
           <div className={menu ? styles.fontBox : `${styles.fontBox} ${styles.action}`}>
             <p>B</p>
             <span className={menu ? styles.spanA : `${styles.spanA} ${styles.action}`}>EA HASEONG&#39;s</span>
-            <span className={menu ? styles.spanB : `${styles.spanB} ${styles.action}`}>EA</span>
+            <span className={menu ? styles.spanB : `${styles.spanB} ${styles.action}`}>AE</span>
           </div>
 
           <div className={menu ? styles.fontBox : `${styles.fontBox} ${styles.action}`}>

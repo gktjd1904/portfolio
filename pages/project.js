@@ -11,7 +11,8 @@ function project() {
 
 
     return (
-        <div className={styles.aaa}>
+        <div className={styles.project}>
+            {/* <div className={styles.text}>SWIPER</div> */}
             {/* <div className={styles.portpolio}>
                 <Portpolio></Portpolio>
             </div> */}

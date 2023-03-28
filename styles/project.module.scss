@@ -1,9 +1,16 @@
-.aaa {
+.project {
     display: flex;
     flex-direction: column;
     // gap: 2%;
     width: 100vw;
 
+
+    .text {
+        position: absolute;
+        top: 60%;
+        color: #333;
+        font-size: 12vw;
+    }
 
     .bbubbu {
         // border: 1px solid red;
