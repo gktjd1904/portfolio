@@ -3,10 +3,11 @@
     z-index: -1;
     top: 0;
     left: 0;
-    width: 100vw;
+    width: 80%;
+    margin: 0 auto;
 
     .projectCont {
-        width: 90%;
+        width: 100%;
         height: 65vw;
         max-height: 610px;
         margin: 6vw auto;
@@ -14,13 +15,11 @@
 
         .leftCont {
             width: 50%;
-            height: 100%;
             border-right: 3px solid #333;
             border-bottom: 3px solid #333;
             border-top: 3px solid #333;
             color: white;
-            padding-top: 2vw;
-            padding-bottom: 2vw;
+
 
             .block {
                 display: block;
@@ -30,11 +29,11 @@
                 @keyframes fade-in {
                     0% {
                         opacity: 0;
-                        transform: translateY(20%);
+                        transform: translateX(-20%);
                     }
 
                     50% {
-                        transform: translateY(0%);
+                        transform: translateX(0%);
                     }
 
                     100% {
@@ -46,11 +45,13 @@
             .none {
                 display: none;
             }
+
+
         }
 
         .rightCont {
             width: 50%;
-            height: 100%;
+            // height: 100%;
 
             // border: 1px solid blue;
 

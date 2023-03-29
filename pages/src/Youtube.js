@@ -62,7 +62,7 @@ function Youtube() {
                         <div className={youtubeStyles.contC}>
                             <h2>📆개발 기간</h2>
                             <p>2023.01.09 ~ 2023.02.06</p>
-                            <Link href={`#`}>youtube 사이트 바로가기</Link>
+                            <Link href={`https://gktjd1904.github.io/youtubeAPI/`}>youtube 사이트 바로가기</Link>
                         </div>
                     </div>
                 </div>

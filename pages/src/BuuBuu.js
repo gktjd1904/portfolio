@@ -83,7 +83,6 @@ function BuuBuu() {
                             <h3>🤔canvas이미지 저장시 CORS오류</h3><br></br>
                             <p>😏배포 후 도메인이 달라져서 해결<br></br>---(개발환경에서 canvas에 외부 이미지가 들어가면 보안상의 이
                                 유로 CORS오류가 뜬다)</p>
-
                         </div>
                     </div>
                     <div className={num > 5 ? styles.block : styles.none}>
@@ -92,6 +91,7 @@ function BuuBuu() {
                             <p>2023.02.15 ~ 2023.03.20</p>
                             <Link href={`https://bbubbu.vercel.app/`}>bbubbu 사이트 바로가기</Link>
                         </div>
+
                     </div>
                 </div>
                 <div className={styles.rightCont}>

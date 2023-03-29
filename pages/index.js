@@ -15,7 +15,7 @@ export default function Home() {
   const [menu, setMenu] = useState(true);
 
   function menuBTN() {
-    setMenu(!menu) 
+    setMenu(!menu)
   }
 
   return (

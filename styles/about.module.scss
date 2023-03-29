@@ -6,15 +6,35 @@
     overflow-x: hidden;
 
     .aboutCont {
-        width: 90%;
+        width: 80%;
         margin: 0 auto;
-        padding-top: 10vh;
+        padding-bottom: 5vw;
+        padding-top: 5vw;
         display: flex;
-        gap: 2vw;
-        margin-top: 3vw;
+        align-items: center;
+        gap: 4vw;
+        margin-top: 15vw;
+        border-top: 3px solid #333;
+        border-bottom: 3px solid #333;
+
+        .me {
+            position: absolute;
+            top: 8vw;
+            font-size: 5vw;
+            font-weight: bold;
+            margin-left: 7vw;
+
+            img {
+                position: absolute;
+                width: 09vw;
+                height: 8vw;
+                left: -9vw;
+                top: -1vw;
+            }
+        }
 
         .contLeft {
-            width: 30%;
+            width: 33%;
 
             img {
                 width: auto;
@@ -30,7 +50,7 @@
             h1 {
                 font-size: 3vw;
                 line-height: 5vw;
-                margin-bottom: 3vw;
+                margin-bottom: 2vw;
                 padding-bottom: 1vw;
                 border-bottom: 3px solid #333;
             }
@@ -50,38 +70,101 @@
     }
 
     .skill {
-        // border: 1px solid red;
-        width: 90%;
+        width: 80%;
         margin: 0 auto;
-        margin-top: 20vw;
-        margin-bottom: 10vw;
-        overflow: hidden;
-        white-space: nowrap;
+        border-top: 3px solid #333;
+        padding-top: 3vw;
 
         h1 {
-            margin-bottom: 3vw;
-            border-bottom: 3px solid #333;
-            padding-bottom: 1vw;
             color: white;
             font-size: 5vw;
+            margin-bottom: 2vw;
         }
 
-        .skillsA,
-        .skillsB {
+        img {
+            width: 5vw;
+            height: 5vw;
+        }
+
+        .skillCont {
+            width: 100%;
+            height: 35vw;
+            border: 5px solid #333;
             display: flex;
-            /* gap: 11%; */
             margin-bottom: 5vw;
-            justify-content: space-around;
 
-            li {
-                padding-bottom: 35px;
+            .contLeft,
+            .contRight {
+                width: 50%;
+                height: 100%;
+                // border: 1px solid red;
+                display: flex;
+                flex-direction: row;
+                flex-wrap: wrap;
+                font-size: 2vw;
 
-                img {
-                    width: 6vw;
-                    height: 6vw;
+                .cont {
+                    border: 2px solid #333;
+                    width: 50%;
+                    height: 50%;
+
+                    div {
+                        border-bottom: 2px solid #333;
+                        width: 80%;
+                        margin: 0 auto;
+                        padding-bottom: 1vw;
+                        display: flex;
+                        align-items: center;
+                        justify-content: start;
+                        font-weight: bold;
+                    }
+
+                    p {
+                        width: 80%;
+                        font-size: 1.2vw;
+                        margin-left: 2vw;
+                        margin-top: 1vw;
+                    }
                 }
             }
         }
+    }
+}
 
+.bgTextBox {
+    z-index: 1;
+    position: relative;
+    width: 80%;
+    margin: 0 auto;
+    font-size: 16vw;
+    white-space: nowrap;
+    overflow: hidden;
+    color: black;
+
+    .Text {
+        transform: translateY(-50%);
+        white-space: nowrap;
+        will-change: transform;
+        animation: marquee 30s linear infinite;
+        text-align: center;
+
+        @keyframes marquee {
+            0% {
+                transform: translateX(0);
+            }
+
+            100% {
+                transform: translateX(-50%);
+            }
+        }
+
+        p {
+            padding-bottom: 1vw;
+            text-shadow:
+                -1px -1px 0 #555454,
+                1px -1px 0 #555454,
+                -1px 1px 0 #555454,
+                1px 1px 0 #555454;
+        }
     }
 }
