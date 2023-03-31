@@ -1,0 +1,1 @@
+(self.webpackChunk_N_E=self.webpackChunk_N_E||[]).push([[88],{8084:function(n,u,_){(window.__NEXT_P=window.__NEXT_P||[]).push(["/src/BuuBuu",function(){return _(2761)}])}},function(n){n.O(0,[675,615,761,774,888,179],function(){return n(n.s=8084)}),_N_E=n.O()}]);
